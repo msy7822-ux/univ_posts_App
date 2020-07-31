@@ -12,10 +12,10 @@
     require("./dbconnect.php");
 
     session_start();
-    $current_user = "NO USER";
-
     if($_SESSION['login_user_id'] !== ""){
         $current_user = $_SESSION['login_user_id'];
+    }elseif($_SESSION['login_user_id'] === ""){
+        $current_user = "NO USER";
     }
 ?>
 
