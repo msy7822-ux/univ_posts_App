@@ -11,6 +11,9 @@
     // 必要性があるかは不明だが、一応、データベース接続ページの読み込み
     require("./dbconnect.php");
     $current_user = "";
+    
+    // エラーメッセージの表示
+    ini_set('display_errors', 1);
 
     session_start();
     if($_SESSION['login_user_id'] !== NULL){
