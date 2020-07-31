@@ -19,18 +19,18 @@
         // 現在ログイン中のユーザーのidを変数で格納する
         $current_login_user_id = $_SESSION['login_user_id'];
 
-        var_dump($_SESSION);
-        echo "<br>";
-        var_dump($_SESSION['login_user_id']);
-        echo '<br>';
-        echo 'sessionあります';
+        // var_dump($_SESSION);
+        // echo "<br>";
+        // var_dump($_SESSION['login_user_id']);
+        // echo '<br>';
+        // echo 'sessionあります';
 
     }
-    var_dump($_SESSION);
-    echo "<br>";
-    var_dump($_SESSION['login_user_id']);
-    echo '<br>';
-    echo 'sessionあります';
+    // var_dump($_SESSION);
+    // echo "<br>";
+    // var_dump($_SESSION['login_user_id']);
+    // echo '<br>';
+    // echo 'sessionあります';
 
 
     // データベース接続のファイルの読み込み

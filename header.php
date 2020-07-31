@@ -13,17 +13,17 @@
     $current_user = "";
     
     // エラーメッセージの表示
-    ini_set('display_errors', 1);
+    // ini_set('display_errors', 1);
 
     session_start();
     if($_SESSION['login_user_id'] !== NULL){
         $current_user = $_SESSION['login_user_id'];
 
-        var_dump($_SESSION);
-        echo "<br>";
-        var_dump($_SESSION['login_user_id']);
-        echo '<br>';
-        echo 'sessionあります';
+        // var_dump($_SESSION);
+        // echo "<br>";
+        // var_dump($_SESSION['login_user_id']);
+        // echo '<br>';
+        // echo 'sessionあります';
 
     }elseif($_SESSION['login_user_id'] === NULL){
         $current_user = "NO USER";
