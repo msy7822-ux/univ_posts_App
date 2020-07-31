@@ -6,11 +6,6 @@
     // エラーメッセージの表示
     ini_set('display_errors', 1);
 
-    // もしなければ、usersテーブルを作成しておく
-    $sql = 'CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, name char(32), password TEXT, email TEXT);';
-    $statement = $pdo->query($sql);
-
-
     // 入力されたデータを受けとって変数に格納する
     // 空欄ではないことが前提
     $name = $_POST['name'];

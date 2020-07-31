@@ -26,4 +26,14 @@
         echo "データベース接続エラー：".$error;
     }
 
+
+    // もしなければ、usersテーブルを作成しておく
+    $sql = 'CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, name char(32), password TEXT, email TEXT);';
+    $statement = $pdo->query($sql);
+
+    // もし投稿に関してのテーブルがなかったら、予めテーブルを作成する
+    $sql = 'CREATE TABLE IF NOT EXISTS posts (id INT AUTO_INCREMENT PRIMARY KEY, univ_name TEXT, faculity TEXT, professor_name char(32), easy_class TEXT, other_info TEXT, user_id INT);';
+    $statement = $pdo->query($sql);    
+    
+
 ?>

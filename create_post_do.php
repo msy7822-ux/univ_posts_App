@@ -4,11 +4,6 @@
     // エラーメッセージの表示
     ini_set('display_errors', 1);
 
-
-    // 投稿に関してのテーブルがなかったら、テーブルを作成する
-    $sql = 'CREATE TABLE IF NOT EXISTS posts (id INT AUTO_INCREMENT PRIMARY KEY, univ_name TEXT, faculity TEXT, professor_name char(32), easy_class TEXT, other_info TEXT, user_id INT);';
-    $statement = $pdo->query($sql);
-
     // ここで受けとったデータは、空欄ではないことが前提
     $univ_name = $_POST['univ_name'];
     $faculity = $_POST['faculity'];
