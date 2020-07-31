@@ -1,0 +1,334 @@
+body {
+    width: 815px;
+    margin: 0 auto;
+}
+
+a, input{
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* header.php */
+
+.header .header-list{
+    background:rgba(4,163,181,1); 
+    list-style: none; 
+    display: flex; 
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.header .header-list li {
+    color: #fff; 
+    text-decoration: none;
+}
+.header .header-list li a{
+    color: #fff; 
+    text-decoration: none;
+}
+
+.header .header-list .header-right{
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
+
+/* buttons （あるケースとないケースとがある） */
+.buttons {
+    display: flex;
+}
+
+.buttons .my-page-form .my-page-form-button {
+    text-decoration: none; 
+    background-color: rgba(4,163,181,1); 
+    color: #fff; 
+    border: 1px solid rgba(4,163,181,1);
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.buttons .logout-form .logout-form-button{
+    text-decoration: none; 
+    background-color: rgba(4,163,181,1); 
+    color: #fff; 
+    border: 1px solid rgba(4,163,181,1);
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* home.php */
+
+.home-list{
+    background:rgba(4,163,181,1); 
+    list-style: none; 
+    display: flex; 
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+
+.home-list li a{
+    color: #fff; 
+    text-decoration: none;
+}
+
+.home-title{
+    background:rgba(4,163,181,1); 
+    color: #fff; 
+    width:50%; 
+    text-align: center; 
+    border-radius: 4px;
+}
+
+.home-img{
+    display: block;
+    margin: 10px auto;
+    height: 450px; 
+    width: 600px; 
+    border-radius: 4px;
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+/* create_user_form.php */
+
+.create-user-title{
+    background: rgba(4,163,181,1);
+    color: #fff;
+    text-align: center; 
+    width: 50%;
+    border-radius: 4px;
+}
+
+.create-user-list{
+    background:rgba(4,163,181,1);
+    display: flex;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.create-user-list li{
+    list-style: none;
+}
+
+
+.create-user-list li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* create_user_form */
+
+.create-user-form{
+    border: 1px solid rgba(4,163,181,1);
+    width: 40%;
+    overflow: hidden;
+}
+
+.create-user-form .create-user-name{
+    padding: 15px 36px;
+    border: 1px solid rgba(4,163,181,1);
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 40%;
+}
+
+.create-user-form .create-user-password{
+    padding: 15px 36px;
+    border: 1px solid rgba(4,163,181,1);
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 40%;
+}
+.create-user-form .create-user-email{
+    padding: 15px 36px;
+    border: 1px solid rgba(4,163,181,1);
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 40%;
+}
+
+.create-user-form .create-user-button{
+    padding: 8px 12px;
+    background:rgba(4,163,181,1);
+    border: 1px solid rgba(4,163,181,1);
+    color: #fff;
+    float: right;
+
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------- */
+/* login_form/php */
+
+.login-form-list{
+    background:rgba(4,163,181,1);
+    display: flex;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.login-form-list li{
+    list-style: none;
+}
+
+.login-form-list li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.login-form-title{
+    background: rgba(4,163,181,1);
+    color: #fff;
+    text-align: center; 
+    width: 50%;
+    border-radius: 4px;
+}
+
+.login-form{
+    border: 1px solid rgba(4,163,181,1);
+    width: 40%;
+    overflow: hidden;
+}
+
+.login-form .login-form-name{
+    padding: 15px 36px;
+    border: 1px solid rgba(4,163,181,1);
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 40%;
+}
+
+.login-form .login-form-password{
+    padding: 15px 36px;
+    border: 1px solid rgba(4,163,181,1);
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 40%;
+}
+
+.login-form .login-form-email{
+    padding: 15px 36px;
+    border: 1px solid rgba(4,163,181,1);
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 40%;
+}
+
+.login-form .login-form-button{
+    padding: 8px 12px;
+    background:rgba(4,163,181,1);
+    border: 1px solid rgba(4,163,181,1);
+    color: #fff;
+    float: right;
+
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* index.php */
+/* current-post-univs */
+
+.current-post-univs{
+    background-color: rgba(4,163,181,1);
+    border-radius: 4px;
+    width: 50%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+.current-post-univs label.current-post-univ-label{
+    color: #fff;
+}
+
+.current-post-form .univ-option{
+    padding: 6px 40px;
+    border: 1px solid rgba(4,163,181,1);
+    border-radius: 4px;
+}
+
+.current-post-univs .current-post-form .univ-button{
+    margin-top: 10px;
+    padding: 3px 57px;
+    background-color: #fff;
+    border: solid 1px rgba(4,163,181,1);
+    border-radius: 4px;
+}
+
+
+/* index of univs */
+
+.contents {
+    background-color: rgba(4,163,181,1);
+}
+
+.contents label{
+    color: #fff;
+    margin-left: 10px;
+}
+
+.contents .post-content{
+    background-color: #fff;
+    padding: 8px 12px;
+    width: 50%;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.contents .buttons .edit-form {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* only-one-univ.php */
+
+button.shift-to-index{
+    background-color: rgba(4,163,181,1);
+    border: 1px solid rgba(4,163,181,1);
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+button.shift-to-index a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* create-post-form.php */
+
+.create-post {
+    background-color: rgba(4,163,181,1);
+}
+
+.create-post-form {
+    padding: 8px 10px;
+}
+
+.create-post .create-post-form .form-input{
+    padding: 10px 15px;
+}
+
+/* my-page.php */
+
+.mypage-do-post {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(4,163,181,1);
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+h1.my-page-header {
+    background-color: rgba(4,163,181,1);
+    color: #fff;
+}
