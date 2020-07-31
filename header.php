@@ -16,6 +16,10 @@
     session_start();
     if(session_status() !== PHP_SESSION_NONE || session_status() !== PHP_SESSION_DISABLED){
         $current_user = $_SESSION['login_user_id'];
+        var_dump($_SESSION);
+        echo "<br>";
+        var_dump($_SESSION['login_user_id']);
+        echo '<br>';
         echo 'sessionあります';
     }
     // if($_SESSION['login_user_id'] !== ""){
