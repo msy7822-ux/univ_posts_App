@@ -18,13 +18,13 @@
     ini_set('display_errors', 1);
 
 
-    // 現在何かしらのアカウントがログインして居るとき
-    if($_SESSION['login_user_id'] !== NULL && $_SESSION['login_user_id'] !== ""){
-        // 現在ログイン中のユーザーのidを変数で格納する
-        $current_login_user_id = $_SESSION['login_user_id'];
-    }elseif($_SESSION['login_user_id'] === NULL || $_SESSION['login_user_id'] === ""){
-        $current_login_user_id = 'NO USER';
-    }
+    // // 現在何かしらのアカウントがログインして居るとき
+    // if($_SESSION['login_user_id'] !== NULL && $_SESSION['login_user_id'] !== ""){
+    //     // 現在ログイン中のユーザーのidを変数で格納する
+    //     $current_login_user_id = $_SESSION['login_user_id'];
+    // }elseif($_SESSION['login_user_id'] === NULL || $_SESSION['login_user_id'] === ""){
+    //     $current_login_user_id = 'NO USER';
+    // }
     // var_dump($_SESSION);
     // echo "<br>";
     // var_dump($_SESSION['login_user_id']);
