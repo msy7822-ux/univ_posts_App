@@ -22,6 +22,9 @@
     // エラーメッセージ
     $error_message = "";
 
+    // //　Cookieでログインを管理
+    // setcookie('login_user_id', '', time()+60*60, '/', 'xxxxx.com', true, true）
+
     $_SESSION['login_user_id'] = '';
 
     if($array !== []){

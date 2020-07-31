@@ -10,13 +10,19 @@
 <?php
     // 必要性があるかは不明だが、一応、データベース接続ページの読み込み
     require("./dbconnect.php");
+    $current_user = "";
 
     session_start();
-    if($_SESSION['login_user_id'] !== ""){
+    if(session_status() !== PHP_SESSION_NONE || session_status() !== PHP_SESSION_DISABLED){
         $current_user = $_SESSION['login_user_id'];
-    }elseif($_SESSION['login_user_id'] === ""){
+    }else{
         $current_user = "NO USER";
     }
+    // if($_SESSION['login_user_id'] !== ""){
+    //     $current_user = $_SESSION['login_user_id'];
+    // }elseif($_SESSION['login_user_id'] === ""){
+    //     $current_user = "NO USER";
+    // }
 ?>
 
 <div class="header">

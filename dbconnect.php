@@ -3,7 +3,7 @@
     // pdo接続のためのプログラム
 
     // エラーメッセージの表示
-    ini_set('display_errors', 1);
+    // ini_set('display_errors', 1);
 
     try{
         $db = parse_url($_SERVER['CLEARDB_DATABASE_URL']);
