@@ -11,16 +11,19 @@
     // 必要性があるかは不明だが、一応、データベース接続ページの読み込み
     require("./dbconnect.php");
     $current_user = "";
-    $current_user = "NO USER";
 
     session_start();
-    if(session_status() !== PHP_SESSION_NONE || session_status() !== PHP_SESSION_DISABLED){
+    if($_SESSION['login_user_id'] !== NULL){
         $current_user = $_SESSION['login_user_id'];
+
         var_dump($_SESSION);
         echo "<br>";
         var_dump($_SESSION['login_user_id']);
         echo '<br>';
         echo 'sessionあります';
+
+    }elseif($_SESSION['login_user_id'] === NULL){
+        $current_user = "NO USER";
     }
     // if($_SESSION['login_user_id'] !== ""){
     //     $current_user = $_SESSION['login_user_id'];
