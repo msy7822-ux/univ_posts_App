@@ -12,8 +12,13 @@
     // 共通ヘッダーの読み込み
     require("./header.php");
 
-    // 現在ログイン中のユーザーのidを変数で格納する
-    $current_login_user_id = $_SESSION['login_user_id'];
+    $current_login_user_id = 0;
+
+    // 現在何かしらのアカウントがログインして居るとき
+    if($_SESSION['login_user_id'] !== NULL){
+        // 現在ログイン中のユーザーのidを変数で格納する
+        $current_login_user_id = $_SESSION['login_user_id'];
+    }
 
     // データベース接続のファイルの読み込み
     require("./dbconnect.php");
