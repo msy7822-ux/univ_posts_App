@@ -14,25 +14,16 @@
 
     $current_login_user_id = 0;
 
-        // エラーメッセージの表示
-        ini_set('display_errors', 1);
+    // エラーメッセージの表示
+    ini_set('display_errors', 1);
 
 
     // 現在何かしらのアカウントがログインして居るとき
-    if($_SESSION['login_user_id'] !== NULL){
+    if($_SESSION['login_user_id'] !== NULL && $_SESSION['login_user_id'] !== ""){
         // 現在ログイン中のユーザーのidを変数で格納する
         $current_login_user_id = $_SESSION['login_user_id'];
-
-        var_dump($_SESSION);
-        echo "<br>";
-        var_dump($_SESSION['login_user_id']);
-        echo '<br>';
-        echo 'sessionあります';
-    }
-
-    if($_SESSION['login_user_id'] === NULL){
-        echo '蜜ですならぬNULLです';
-        var_dump($_SESSION);
+    }elseif($_SESSION['login_user_id'] === NULL || $_SESSION['login_user_id'] === ""){
+        $current_login_user_id = 'NO USER';
     }
     // var_dump($_SESSION);
     // echo "<br>";
